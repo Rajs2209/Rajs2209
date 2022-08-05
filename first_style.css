@@ -1,0 +1,595 @@
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
+.header {
+    padding: -10%;
+    height: 15%;
+    width: 100%;
+    /* background-color: aqua; */
+    margin-bottom: 5%;
+}
+
+.icon img {
+    margin-top: -7%;
+    margin-left: -5%;
+    width: 30%;
+    height: 400%;
+    border-radius: 40%;
+}
+
+.icon img:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+.social {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.social a {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    transition: all 0.3s ease;
+    font-size: 20px;
+}
+
+.social a:hover {
+    background: black;
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    ;
+    color: white;
+}
+
+ul {
+    margin-bottom: 1em;
+    margin-top: 0;
+    margin-left: 10%;
+    padding: 0;
+    list-style-type: none;
+    font-size: .8em;
+}
+
+li {
+    display: inline;
+    color: gray;
+}
+
+a {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+.container1 {
+    /* display: flex;
+  background: rgb(181, 153, 255); */
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: auto;
+    background-color: #f0f5f8;
+    padding: 0;
+}
+
+.container1 .first-container {
+    /* box-shadow: 10px 10px rgb(80, 51, 200); */
+    background-color: white;
+    width: 100%;
+    margin: 0.5%;
+    padding: 8%;
+    /* text-align: center; */
+}
+
+.first-container h1 {
+    margin: 0;
+    font-size: 300%;
+    color: rgb(30, 50, 123);
+    font-style: normal;
+    font-weight: 700;
+    font-stretch: condensed;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.first-container h5 {
+    margin-top: 20%;
+    font-size: 100%;
+    text-align: center;
+}
+
+button {
+    margin-top: 10%;
+    border: none;
+    background-color: rgb(0, 164, 239);
+    color: #f1f1f1;
+    border-radius: 20px;
+    height: 12%;
+    width: 44%;
+    text-align: center;
+    display: inline-block;
+    margin-left: 28%;
+}
+
+.vc button {
+    font-size: 100%;
+}
+
+
+/* #video-call-div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+} */
+
+.user {
+    position: absolute;
+    margin-top: 10%;
+    cursor: pointer;
+    width: 15%;
+}
+
+
+/* 
+#local-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 16px;
+    border-radius: 16px;
+    width: 20%;
+    height: 20%;
+    background: #ffffff;
+} */
+
+#remote-video {
+    background: #000000;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 
+call-action-div {
+    position: absolute;
+    left: 45%;
+    bottom: 32px;
+    font-size: 20px;
+} */
+
+button {
+    cursor: pointer;
+}
+
+.container2 {
+    /* display: flex;
+  background: rgb(46, 61, 151); */
+    display: grid;
+    background-color: rgba(46, 60, 124, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+
+/* Slideshow container */
+
+.container2 .second-container .slideshow-container {
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+    margin-top: 1.5%;
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+
+.open-button {
+    background-color: rgb(47, 65, 13);
+    color: white;
+    padding: 16px 20px;
+    border-radius: 80%;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 10%;
+}
+
+
+/* The popup chat - hidden by default */
+
+.chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+
+/* Add styles to the form container */
+
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+
+/* Full-width textarea */
+
+.form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 200px;
+}
+
+
+/* When the textarea gets focus, do something */
+
+.form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+
+/* Set a style for the submit/send button */
+
+.form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+
+/* Add a red background color to the cancel button */
+
+.form-container .cancel {
+    background-color: red;
+}
+
+
+/* Add some hover effects to buttons */
+
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}
+
+body {
+    height: 125vh;
+    margin-top: 80px;
+    padding: 30px;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: black;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 5px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 25px 0 black;
+}
+
+header * {
+    display: inline;
+}
+
+header li {
+    margin: 20px;
+}
+
+header li a {
+    color: blue;
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15));
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: changepic 16s ease-in-out infinite;
+}
+
+nav {
+    position: fixed;
+    top: 5px;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+nav .logo {
+    width: 25%;
+    text-align: center;
+    /*background: red;*/
+}
+
+nav .menu {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav .menu a {
+    width: 25%;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav .menu a:first-child {
+    color: #00b894;
+}
+
+main {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+section h3 {
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+}
+
+section h1 {
+    margin: 30px 0 20px 0;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+}
+
+section p {
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+
+section a {
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all 0.5s ease;
+}
+
+section .btnone {
+    /*background: #00b894;*/
+    background: #fff;
+    color: #000;
+}
+
+.btnone:hover {
+    background: #00b894;
+    color: white;
+}
+
+section .btntwo {
+    background: #00b894;
+    color: white;
+}
+
+.btntwo:hover {
+    background: #fff;
+    color: #000;
+}
+
+
+/* 
+.change_content:after {
+    content: "";
+    
+    color: #00b894;
+} */
+
+@keyframes changepic {
+    0% {
+        background-image: url('../VC_project/imgs/imagee.jpg.jpg');
+    }
+    20% {
+        background-image: url('../VC_project/imgs/img1.jpg');
+    }
+    35% {
+        background-image: url('../VC_project/imgs/nat1.jpg');
+    }
+    60% {
+        background-image: url('../VC_project/imgs/nat2.jpg');
+    }
+    80% {
+        background-image: url('../VC_project/imgs/nat3.jpg');
+    }
+    100% {
+        background-image: url('../VC_project/imgs/nat4.jpg');
+    }
+}

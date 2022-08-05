@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="first_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video calling</title>
+</head>
+
+<body>
+    <!-- <section id="section">
+    <div class="header">
+        <div class="icon">
+            <img src="imgs/image.jpg" alt="C2C">
+        </div>
+        <ul>
+            <li><a href="Home">Home</a></li>&nbsp; &nbsp; &nbsp; 
+            <li><a href="Blog">Blog</a></li>&nbsp; &nbsp; &nbsp;
+            <li><a href="CONTACT.HTML">Contact</a></li>&nbsp; &nbsp; &nbsp;
+            <li><a href="About">About</a></li>&nbsp; &nbsp; &nbsp;
+        </ul>
+        
+    </div>
+</section> -->
+
+    <div class="social">
+        <a id="fb" href="https://www.facebook.com/" class="fa fa-facebook"></a>
+        <a id="twt" href="https://twitter.com/?lang=en-in" class="fa fa-twitter"></a>
+        <a id="g" href="https://www.google.co.in/" class="fa fa-google"></a>
+        <a id="li" href="https://in.linkedin.com/" class="fa fa-linkedin"></a>
+        <a id="yt" href="https://www.youtube.com/" class="fa fa-youtube"></a>
+        <a id="insta" href="https://www.instagram.com/accounts/login/" class="fa fa-instagram"></a>
+    </div>
+
+    <!--first-container-->
+    <div class="container1">
+        <div class="first-container">
+            <div class="icon">
+                <img src="imgs/image.jpg" alt="C2C">
+            </div>
+
+            <h1>
+                VIDEO CALL
+            </h1>
+            <h5>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit dolorem voluptatum quam ad quidem ut aut magni, dicta dignissimos error?
+            </h5>
+            <a href="#">
+                <button><i id="right-arrow" class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i>&nbsp; &nbsp;</i>SIGN IN</button>
+                <!-- <i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i> -->
+            </a>
+            <div class="vc">
+
+                <!-- <button >START VIDEO CALL</button>
+          <a href="sender.html"></a> -->
+                <a href="sender.html"><button>START VIDEO CALL</button></a>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="second-container">
+                <ul>
+                    <li><a href="Home">Home</a></li>&nbsp; &nbsp;
+                    <li><a href="Blog">Blog</a></li>&nbsp; &nbsp;
+                    <li><a href="CONTACT.HTML">Contact</a></li>&nbsp; &nbsp;
+                    <li><a href="About">About</a></li>&nbsp; &nbsp;
+                </ul>
+                <!-- </div>
+
+    </div>
+</div> -->
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <img src="imgs/vc_1.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <img src="imgs/vc__2.jpg" style="width:70%">
+                    </div>
+                    <div class="mySlides fade">
+
+                        <div class="numbertext"></div>
+                        <img src="imgs/vc_3.jpg" style="width:50%">
+
+                    </div>
+
+                </div>
+                <br>
+
+                <div style="text-align:center">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <br>
+                <script>
+                    var slideIndex = 0;
+                    showSlides();
+
+                    function showSlides() {
+                        var i;
+                        var slides = document.getElementsByClassName("mySlides");
+                        var dots = document.getElementsByClassName("dot");
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        slideIndex++;
+                        if (slideIndex > slides.length) {
+                            slideIndex = 1
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex - 1].style.display = "block";
+                        dots[slideIndex - 1].className += " active";
+                        setTimeout(showSlides, 2000); // Change image every 2 seconds
+                    }
+                </script>
+
+                <!-- <h2>Popup Chat Window</h2> -->
+
+                <button class="open-button" onclick="openForm()">Chat</button>
+
+                <div class="chat-popup" id="myForm">
+                    <form action="/action_page.php" class="form-container">
+                        <h1>Chat</h1>
+
+                        <label for="msg"><b>Message</b></label>
+                        <textarea placeholder="Type message..." name="msg" required></textarea>
+
+                        <button type="submit" class="btn">Send</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
